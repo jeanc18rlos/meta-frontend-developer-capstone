@@ -1,10 +1,26 @@
+:root {
+  --background-color: #fff;
+  --text-color: #333;
+  --accent-color: #495e57;
+  --primary-color: #f4ce15;
+  --card-color: #edefee;
+  --secondary-color: #ee9972;
+  
+  --main-font: "Karla", sans-serif;
+  --heading-font: "Markazi Text", serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  color: var(--text-color);
+  font-family: var(--main-font);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-color);
 }
 
 .layout {
@@ -21,14 +37,15 @@ h4,
 h5,
 h6 {
   margin: 0;
-  font-family: "Markazi Text", serif;
+  font-family: var(--heading-font);
   font-weight: 600;
+  line-height: 1.5;
 }
 
 p,
 span {
   margin: 0;
-  font-family: "Karla", sans-serif;
+  font-family: var(--main-font);
   font-weight: 400;
 }
 
@@ -59,6 +76,7 @@ h6 {
 p,
 span {
   font-size: 1rem;
+  line-height: 1.5;
 }
 
 nav {
@@ -66,8 +84,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: #f8f9fa;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 nav > ul {
@@ -77,4 +93,23 @@ nav > ul {
 
 nav > ul > li {
   margin-right: 1rem;
+}
+
+.container {
+  position: relative;
+  padding: 1rem;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
 }
