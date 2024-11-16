@@ -1,0 +1,23 @@
+
+.container {
+  position: relative;
+  padding: 1rem;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+.section {
+  scroll-margin-top: 10em;
+}
