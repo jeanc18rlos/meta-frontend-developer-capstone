@@ -1,0 +1,35 @@
+/**
+ * Menu
+ */
+
+.menu-section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.menu-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-cards {
+  display: grid;
+  padding-top: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.menu-card a {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+  gap: 0.5rem;
+  align-items: center;
+}
+.menu-card .card-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}

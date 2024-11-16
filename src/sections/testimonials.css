@@ -1,0 +1,38 @@
+/**
+ * Testimonials
+ */
+
+ .testimonials-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: var(--primary-color);
+  }
+  .testimonials-section h2 {
+    text-align: center;
+  }
+  .testimonials-cards {
+    display: grid;
+    padding-top: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+  
+  .testimonial-card .person {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.5rem;
+    padding: 1rem;
+    padding-bottom: 0;
+  }
+  
+  .testimonial-card .person img {
+    width: 65px;
+    border-radius: 12px;
+  }
+  
+  .testimonial-card .card-description {
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    margin-top: auto;
+  }
