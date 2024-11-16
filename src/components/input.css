@@ -1,0 +1,15 @@
+.input {
+  background: var(--card-color);
+  padding: 0.5em;
+  color: var(--accent-color);
+  font-size: 1.2em;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 0 2px 1px #607d8b29;
+  border-radius: 8px;
+}
+
+.input.filled {
+  background: var(--accent-color);
+  color: var(--card-color);
+}
