@@ -1,0 +1,32 @@
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  min-width: 280px;
+  padding: 1rem;
+}
+
+.error {
+  color: var(--destructive-color);
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.select-time-message {
+  padding: 0.5em;
+  font-size: 1em;
+  font-weight: 500;
+  border: none;
+  box-shadow: 0 0 2px 1px #607d8b29;
+  border-radius: 8px;
+}
+
+.select-time-message.select-date {
+  background: var(--card-color);
+  color: var(--accent-color);
+}
+
+.select-time-message.no-available-times {
+  background: var(--secondary-color);
+  color: var(--destructive-color);
+}
