@@ -1,0 +1,85 @@
+.datepicker {
+  position: relative;
+  min-width: 200px;
+  z-index: 9;
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.datepicker-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  background: var(--card-color);
+  padding: 0.5em;
+  text-align: center;
+  font-size: 1.2em;
+  border: none;
+  box-shadow: 0 0 2px 1px #607d8b29;
+  border-radius: 8px;
+}
+.datepicker-header.active {
+  background: var(--accent-color);
+  color: var(--background-color);
+}
+.datepicker-options {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  border: none;
+  background: var(--card-color);
+  box-shadow: 0 0 2px 1px #607d8b29;
+  border-radius: 8px;
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+.datepicker-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+
+  color: var(--background-color);
+  background: var(--accent-color);
+}
+.datepicker-controls span {
+  font-weight: bold;
+}
+
+.datepicker-controls button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.datepicker-days {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 10px;
+  justify-content: center;
+}
+
+.datepicker-day {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+  background: var(--background-color);
+}
+
+.datepicker-day:hover {
+  background: var(--accent-color);
+  color: var(--background-color);
+}
+
+.datepicker-header.active {
+  font-weight: bold;
+}
