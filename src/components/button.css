@@ -1,0 +1,31 @@
+.button {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  height: 100%;
+  max-height: 3em;
+  white-space: nowrap;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.button:hover {
+  cursor: pointer;
+  filter: brightness(1.1);
+  transform: scale(1.03);
+}
+
+.button a {
+  text-decoration: none;
+  color: inherit;
+}
+.button.outline {
+  background-color: transparent;
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+}
+.button.primary {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+}
