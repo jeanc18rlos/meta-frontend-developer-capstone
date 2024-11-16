@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom";
 import Rating from "./rating";
 import { Scooter } from "./icons";
+import "./card.css";
 
 export const CardTitle = ({ children }) => (
   <h4 className="card-title">{children}</h4>
 );
 
 export const CardDescription = ({ children }) => (
-  <p className="card-description">{children}</p>
+  <div className="card-description">{children}</div>
 );
 
 export const CardImage = ({ src, alt }) => (
@@ -17,8 +18,10 @@ export const CardImage = ({ src, alt }) => (
 export const CardContent = ({ children }) => (
   <div className="card-content">{children}</div>
 );
-export const Card = ({ children, className }) => (
-  <div className={`card ${className}`}>{children}</div>
+export const Card = ({ children, className, animated = true }) => (
+  <div className={`card ${className} ${animated ? "animated" : ""}`}>
+    {children}
+  </div>
 );
 
 export const MenuCard = ({
