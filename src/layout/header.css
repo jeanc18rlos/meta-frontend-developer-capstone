@@ -1,0 +1,57 @@
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: var(--background-color);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header .logo {
+  height: 3em;
+}
+
+.header a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 600;
+}
+header a:hover {
+  color: var(--primary-color);
+}
+.header .burger-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header .burger-menu {
+    display: block;
+  }
+  .header ul {
+    position: absolute;
+    top: 5em;
+    width: 100%;
+    flex-direction: column;
+    margin: 0;
+    left: 0;
+    padding: 0;
+    background-color: var(--background-color);
+  }
+  .header ul li {
+    margin: 0;
+    margin-bottom: 0;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--card-color);
+  }
+
+  .header .menu {
+    transition: all 0.3s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+  }
+  .header .menu.active {
+    max-height: 500px;
+  }
+}

@@ -1,0 +1,38 @@
+/**
+ * Footer
+ */
+.footer {
+  background-color: var(--card-color);
+}
+.footer nav {
+  display: grid;
+  align-items: flex-start;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.footer nav img {
+  height: 120px;
+}
+.footer nav ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+.footer nav ul li {
+  margin-bottom: 1rem;
+}
+.footer nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 600;
+}
+.footer nav a:hover {
+  color: var(--primary-color);
+}
+.footer nav h4 {
+  margin-bottom: 1rem;
+}
+@media (max-width: 520px) {
+  .footer nav {
+    justify-content: flex-start;
+  }
+}
