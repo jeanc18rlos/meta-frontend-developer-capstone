@@ -31,7 +31,7 @@ Little Lemon is a web application that allows users to book tables in a restaura
 
 #### Preview
 
-[Preview URL](https://lucent-custard-050213.netlify.app/booking)
+[Preview URL](https://lucent-custard-050213.netlify.app)
 
 #### How to Run the Project Locally
 
